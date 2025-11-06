@@ -15,5 +15,4 @@ const supabase = createClient(SUPABASE_URL || '', SUPABASE_ANON_KEY || '')
 
 export default supabase
 
-// // 导出常用的类型和方法，便于在应用中使用
-// export type { User, Session } from '@supabase/supabase-js'
+
