@@ -150,7 +150,7 @@ const handleVerify = () => {
       icon: 'success'
     })
     
-    验证成功后跳转到相应页面
+    //验证成功后跳转到相应页面
     uni.navigateTo({
       url: '/pages/register/register'
     })

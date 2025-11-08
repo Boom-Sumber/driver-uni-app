@@ -10,6 +10,7 @@
       </view>
 
       <view class="form-container">
+		<view class="texttitle">个人信息( * 必填)</view>
         <!-- 姓名输入 -->
         <view class="input-group">
           <view class="input-icon">
@@ -40,7 +41,7 @@
           />
         </view>
         <view v-if="phoneError" class="error-tip">{{ phoneError }}</view>
-
+		<view class="texttitle">安全中心( * 必填)</view>
         <!-- 设置密码 -->
         <view class="input-group">
           <view class="input-icon">
@@ -231,7 +232,7 @@ const handleComplete = () => {
     
     //注册成功后跳转到首页或登录页
     setTimeout(() => {
-      uni.switchTab({
+      uni.navigateTo({
         url: '/pages/index/index'
       })
     }, 1500)
@@ -297,6 +298,13 @@ page {
   display: flex;
   flex-direction: column;
   gap: 30rpx;
+  
+  .texttitle{
+  	  font-size: 28rpx;
+  	  margin-left: 15rpx;
+  	  color: #666;
+	  
+  }
 }
 
 /* 输入组样式 */
@@ -307,8 +315,9 @@ page {
   border-radius: 8rpx;
   padding: 0 20rpx;
   height: 90rpx;
-  background-color: #fff;
   position: relative;
+  
+  
 
   .input-icon {
     width: 50rpx;
