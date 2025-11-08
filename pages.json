@@ -1,10 +1,33 @@
 {
-	"pages": [{
+	"pages": [
+	{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path": "pages/verify-email/verify-email",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	},
+	{
 		"path": "pages/index/index",
 		"style": {
 			"navigationBarTitleText": "uni-app"
 		}
-	}],
+	}
+],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
